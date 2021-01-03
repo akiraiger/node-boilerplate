@@ -1,0 +1,7 @@
+node_modules/
+
+logs/
+coverage/
+
+.env
+artillery/report.json
