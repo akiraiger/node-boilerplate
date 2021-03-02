@@ -2,6 +2,7 @@ node_modules/
 
 logs/
 coverage/
+dist/
 
 .env
 artillery/report.json
