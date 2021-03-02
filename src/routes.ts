@@ -5,7 +5,9 @@ const prisma = new PrismaClient()
 const router = express.Router()
 
 router.get('/health', (req, res) => {
-  res.json('Healthy')
+  res.json({
+    health: 'Healthy',
+  })
 })
 
 router.get('/test', async (req, res) => {
@@ -29,7 +31,11 @@ router.get('/test', async (req, res) => {
     },
   })
 
-  res.json(allUsers)
+  await prisma.$disconnect()
+
+  res.json({
+    data: allUsers,
+  })
 })
 
 export default router
