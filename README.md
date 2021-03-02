@@ -4,21 +4,20 @@ The goal of this boilerplate is to accelerate development of Node.js project, su
 
 ## Project Setup
 
-1. Clone this repo
-2. Rename it to `<new-project>` that you want to build based on this boilerplate
-3. Run `cd <new-project>`
-4. Copy `.env.example` to `.env`
-5. Run `yarn install`
-6. Run `yarn test`
-7. Run `yarn dev`
-8. Try to hit `health` endpoint using `curl http://localhost:8000/health` and expect `200` response
+1. Clone this repo `git clone https://github.com/maarlf/node-boilerplate.git <project_name>`
+2. Run `cd <project_name>`
+3. Copy `.env.example` to `.env` and adjust with your own configuration
+4. Run `yarn install` to install required dependencies
+5. Run `yarn test` to perform test
+6. Run `yarn dev` to start on your local machine
+7. Try to hit `health check` endpoint using `curl http://localhost:8000/health` and expect `200` response
 
 ## Modules
 
 This boilerplate contain common modules such as:
 
 - API docs with `swagger`
-- Linting with `eslint`
+- Linting with `eslint` and `prettier`
 - Logging with `winston`
 - Unit test and code coverage with `jest`
 - Git hooks with `husky`
