@@ -13,7 +13,6 @@
     "format": "prettier --write .",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest",
-    "test:coverage": "jest --coverage",
     "test:load": "artillery run --output artillery/report.json artillery.yml",
     "test:type": "yarn lint && yarn type-check"
   },
